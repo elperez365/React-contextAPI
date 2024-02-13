@@ -1,4 +1,5 @@
 import { CartContext } from "../store/shopping-cart-context";
+//import useContext
 import { useContext } from "react";
 
 export default function Cart() {
