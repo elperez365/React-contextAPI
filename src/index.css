@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Merriweather:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(#31220b, #382e1b);
@@ -19,6 +19,12 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 3rem 15%;
+}
+
+@media screen and (max-width: 768px) {
+  #main-header {
+    flex-direction: column;
+  }
 }
 
 #main-title {
@@ -127,12 +133,18 @@ h1 {
 }
 
 #modal {
-  width: 30%;
+  width: 40%;
   background: #d3b17b;
   border: none;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   animation: fade-slide-in-from-top 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  #modal {
+    width: 80%;
+  }
 }
 
 #modal::backdrop {
